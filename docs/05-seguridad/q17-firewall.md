@@ -44,3 +44,7 @@ Al desplegar un WAF en una aplicación web, se coloca un escudo entre la aplicac
 Es un modelo más reciente para ofrecer capacidades de firewall a través de la nube.
 
 Forma una barrera virtual en torno a las plataformas, la infraestructura y las aplicaciones en la nube, al igual que los firewalls tradicionales forman una barrera alrededor de la red interna de una organización.
+
+---
+
+[Volver al índice](../../README.md#índice-de-temas)

@@ -24,4 +24,4 @@ Brinda la capacidad de agregar gradualmente uno o varios sistemas a un clúster 
 
 ---
 
-[Volver al índice](../../README.md)
+[Volver al índice](../../README.md#índice-de-temas)

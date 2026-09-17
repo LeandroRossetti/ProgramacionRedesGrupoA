@@ -1,0 +1,1 @@
+Una **SAN** (Storage Area Network) es una red de alta velocidad diseñada para conectar servidores con dispositivos de almacenamiento. Permite acceder y administrar datos de manera centralizada y generalmente funciona de forma independiente de la red LAN.

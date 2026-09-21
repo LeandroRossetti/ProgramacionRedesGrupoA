@@ -96,11 +96,38 @@ Destaca por su rapidez de despliegue, movilidad y flexibilidad para contingencia
 
 Las llamadas de voz sobre IP (VoIP) requieren una latencia sumamente baja y garantizada sin pérdida de paquetes. MPLS permite etiquetar y priorizar el tráfico de voz por sobre el tráfico de datos convencional mediante políticas de QoS (Calidad de Servicio).
 
+```mermaid
+graph TD
+    subgraph Red_MPLS [Red Privada del Proveedor / Nube MPLS]
+        MPLS((Nube MPLS<br/>Conmutación por Etiquetas + QoS))
+    end
+
+    CC1[Call Center 1] -->|Llamadas VoIP / Datos| MPLS
+    CC2[Call Center 2] -->|Llamadas VoIP / Datos| MPLS
+    CC3[Call Center 3] -->|Llamadas VoIP / Datos| MPLS
+
+    MPLS -->|Tráfico Priorizado / Baja Latencia| DC[(Data Center Central)]
+```
+
 ### Conectar los datos de los pozos petroleros durante 15 minutos por día
 
 >Enlace elegido: VSAT
 
 Los pozos petroleros suelen estar ubicados en áreas geográficas remotas o desérticas donde no hay infraestructura terrestre de fibra ni microondas. Al tratarse de una transmisión breve (15 minutos) de telemetría/datos, el impacto de la latencia satelital es irrelevante y VSAT garantiza cobertura global.
+
+```mermaid
+graph TD
+    subgraph Sitio_Remoto [Pozo Petrolero - Ubicación Remota]
+        Pozo[Sensor / Telemetría] -->|15 min/día| VSAT1[Antena VSAT Terrena]
+    end
+
+    VSAT1 <==>|Enlace Inalámbrico Satelital| Sat((Satélite Geoestacionario))
+    Sat <==>|Estación Hub| Hub[Estación Terrena Central]
+
+    subgraph Base_Central [Centro de Datos / Monitoreo]
+        Hub --> Central[Servidores de Monitoreo]
+    end
+```
 
 ### Comunicar dos edificios enfrentados en la misma calle
 
@@ -108,6 +135,19 @@ Los pozos petroleros suelen estar ubicados en áreas geográficas remotas o des�
 
 Al haber línea de visión directa y una distancia muy corta, un enlace de microondas se instala en horas, no requiere romper la calle ni solicitar permisos municipales para tendido aéreo o subterráneo de cable, y ofrece un ancho de banda elevado a un costo muy reducido.
 
+```mermaid
+graph LR
+    subgraph Edificio_A [Edificio A]
+        RouterA[Red Local A] --- AntenaA[Antena de Microondas]
+    end
+
+    AntenaA <===>|Radioenlace P2P<br/>Línea de Visión Directa LOS| AntenaB[Antena de Microondas]
+
+    subgraph Edificio_B [Edificio B]
+        AntenaB --- RouterB[Red Local B]
+    end
+```
+
 ---
 
-[Volver al índice](../../README.md#índice-de-temas)
+[← Volver al índice](../../README.md#índice-de-temas)

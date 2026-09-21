@@ -1,0 +1,3 @@
+Un **Gateway** es un dispositivo físico o un software que actúa como puente o intermediario entre dos redes que utilizan tecnologías o protocolos diferentes. Su trabajo principal es traducir y adaptar los datos para que ambas redes puedan comunicarse sin problemas.
+Traduce la información entre lenguajes de red incompatibles, encaminamiento los datos (recibe datos de una red, los acomoda al formato que corresponde y los despacha a la otra red, aplicando en el camino filtros de seguridad o controles de acceso) y administra el flujo de los datos asegurando que se respeten las políticas internas de la red.
+

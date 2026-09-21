@@ -27,7 +27,7 @@
 14. [Spanning Tree](./docs/02-protocolos-y-modelos/q14-spanning-tree.md)
 15. [OSPF](./docs/02-protocolos-y-modelos/q15-ospf.md)
 16. [ARP](./docs/02-protocolos-y-modelos/q16-arp.md)
-32. [Diferencias entre IPv4 e IPv6](./docs/02-protocolos-y-modelos/q32-ipv4-ipv6.md)
+32. [Diferencias entre IPv4 e IPv6](./docs/02-protocolos-y-modelos/q32-ipv4-vs-ipv6.md)
 
 ### Redes
 

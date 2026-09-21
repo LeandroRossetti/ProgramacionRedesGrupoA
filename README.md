@@ -1,6 +1,8 @@
 # IFTS N° 18 - Programación Sobre Redes
 
-![logo IFTS18](./img/logo-ifts18.webp)
+<p align="center">
+  <img src="./img/logo-ifts18.webp"/>
+</p>
 
 ## Trabajo Práctico Teórico - Grupo A 
 

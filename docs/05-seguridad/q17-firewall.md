@@ -6,6 +6,31 @@ Los firewalls pueden encontrarse tanto en formato hardware (ej. los comercializa
 
 Los firewalls también se pueden usar para filtrar contenido, como por ejemplo en el caso de  una escuela al configurarlo para impedir que los usuarios de su red accedan a material para adultos.
 
+```mermaid 
+graph LR
+    subgraph LAN ["Internal Network (LAN)"]
+        direction TB
+        L1["💻 Laptop 1"]
+        L2["💻 Laptop 2"]
+    end
+
+    FW["🧱 Firewall"]
+
+    subgraph WAN ["Internet (WAN)"]
+        N1["💻 Equipo 1"]
+        N2["💻 Equipo 2"]
+        N3["💻 Equipo 3"]
+        N4["💻 Equipo 4"]
+
+        N1 --- N2
+        N1 --- N3
+        N2 --- N4
+        N3 --- N4
+    end
+
+    LAN <===> FW <===> WAN
+```
+
 ## Tipos de Firewall 
 
 ### Firewalls basados en proxy
@@ -47,4 +72,4 @@ Forma una barrera virtual en torno a las plataformas, la infraestructura y las a
 
 ---
 
-[Volver al índice](../../README.md#índice-de-temas)
+[← Volver al índice](../../README.md#índice-de-temas)

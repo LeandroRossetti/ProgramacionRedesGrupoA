@@ -4,6 +4,18 @@ NLB son las siglas de Network Load Balancing (Balanceo de Carga de Red). Es una 
 
 Esto sirve para distribuir, es decir, “balancear” el tráfico entrante (como peticiones HTTP, FTP o VPN) entre los equipos del clúster. Si uno de los servidores falla, los demás absorben el tráfico automáticamente, garantizando alta disponibilidad y tolerancia a fallos.
 
+```mermaid
+graph TD
+    User1[Cliente Internet] -->|Petición HTTP| VIP[IP Virtual del Clúster NLB<br/>192.168.1.100]
+    User2[Cliente Internet] -->|Petición HTTP| VIP
+    
+    subgraph Clúster NLB
+        VIP -->|Balanceo de Carga| S1[Servidor 1<br/>192.168.1.10]
+        VIP -->|Balanceo de Carga| S2[Servidor 2<br/>192.168.1.11]
+        VIP -->|Balanceo de Carga| S3[Servidor 3<br/>192.168.1.12]
+    end
+```
+
 ## Beneficios clave
 
 #### Alta disponibilidad:
@@ -24,4 +36,4 @@ Brinda la capacidad de agregar gradualmente uno o varios sistemas a un clúster 
 
 ---
 
-[Volver al índice](../../README.md#índice-de-temas)
+[← Volver al índice](../../README.md#índice-de-temas)

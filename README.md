@@ -16,6 +16,13 @@
 
 > [TP en formato PDF](https://drive.google.com/file/d/1Nst7QRyQUcy_n-UCrMpBkkl3Uo_N1lv0/view?usp=drive_link)
 
+## Sitio web interactivo
+
+> Abrí una terminal en tu navegador y probá comandos como `ping`, `dns`, `dhcp`, `curl` y `tracert` para ver, de forma animada, qué ocurre en cada caso.
+
+- [Terminal interactiva (GitHub Pages)](https://leandrorossetti.github.io/ProgramacionRedesGrupoA/)
+- [Código fuente](./index.html)
+
 ### Fundamentos
 
 - ***1.*** [¿Qué es una VLAN?](./docs/01-fundamentos/q01-vlan.md)
@@ -76,6 +83,6 @@
 
 - ***33.*** [Rodriguez Farias, Lola](./docs/09-experiencia-integrantes/lola-rodriguez-farias.md)
 - ***33.*** [Abizanda, Mariano](./docs/09-experiencia-integrantes/mariano-abizanda.md)
-- ***33.*** [Rossetti, Leandro](./docs/09-experiencia-integrantes/leandro-russetti.md)
+- ***33.*** [Rossetti, Leandro](./docs/09-experiencia-integrantes/leandro-rossetti.md)
 - ***33.*** [Castro, Matías](./docs/09-experiencia-integrantes/castro-matias.md)
 

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Terminal de Redes · Grupo A · IFTS N°18</title>
+  <link rel="stylesheet" href="assets/css/style.css" />
+</head>
+<body>
+  <div class="term-window">
+    <div class="term-titlebar">
+      <span class="dot dot-r"></span>
+      <span class="dot dot-y"></span>
+      <span class="dot dot-g"></span>
+      <span class="term-title">redes-grupo-a — terminal interactiva</span>
+    </div>
+    <div class="term-body" id="term-body">
+      <div id="term-output"></div>
+    </div>
+    <div class="term-input-line">
+      <span class="prompt">usuario@grupoa:~$</span>
+      <input id="term-input" autocomplete="off" autofocus spellcheck="false" aria-label="comando" />
+    </div>
+  </div>
+  <script src="assets/js/terminal.js"></script>
+  <script src="assets/js/commands.js"></script>
+</body>
+</html>
